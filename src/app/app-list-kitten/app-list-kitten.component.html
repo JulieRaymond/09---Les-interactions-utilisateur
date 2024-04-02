@@ -1,0 +1,10 @@
+<h2>Listes des chatons disponibles :</h2>
+<div class="gallery">
+  <div *ngFor="let kitten of kittens" class="kitten-card">
+    <img [src]="kitten.image" alt="{{ kitten.name }}">
+    <p>Nom: {{ kitten.name }}</p>
+    <p>Race: {{ kitten.race }}</p>
+    <p>Date de naissance: {{ kitten.birthDate }}</p>
+    <button (click)="adopt(kitten)">Adopter</button>
+  </div>
+</div>

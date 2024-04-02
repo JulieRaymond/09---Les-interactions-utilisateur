@@ -1,0 +1,42 @@
+<div class="create-kittens">
+  <h2>Créez des chatons :</h2>
+  <div class="form-container">
+    <form [formGroup]="kittenForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" formControlName="name">
+        <div *ngIf="kittenForm.get('name')?.invalid && kittenForm.get('name')?.touched" class="error-message">
+          Le nom du chaton est requis.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="race">Race:</label>
+        <input type="text" id="race" formControlName="race">
+        <div *ngIf="kittenForm.get('race')?.invalid && kittenForm.get('race')?.touched" class="error-message">
+          La race du chaton est requise.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="birthDate">Date de naissance:</label>
+        <input type="date" id="birthDate" formControlName="birthDate">
+        <div *ngIf="kittenForm.get('birthDate')?.invalid && kittenForm.get('birthDate')?.touched" class="error-message">
+          La date de naissance du chaton est requise.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="text" id="image" formControlName="image">
+        <div *ngIf="kittenForm.get('image')?.invalid && kittenForm.get('image')?.touched" class="error-message">
+          L'image du chaton est requise.
+        </div>
+      </div>
+
+      <button type="submit" [class.valid-button]="kittenForm.valid" [class.invalid-button]="!kittenForm.valid" [disabled]="!kittenForm.valid">
+        Ajouter
+      </button>
+    </form>
+  </div>
+</div>

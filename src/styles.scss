@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/app.component';
+@import 'app/app-create-kitten/app-create-kitten.component';
+@import 'app/app-list-kitten/app-list-kitten.component';
+@import 'app/app-user-kitten/app-user-kitten.component';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Faites en sorte que html et body occupent toute la hauteur de la fenêtre */
+}
+
+main {
+  min-height: 100%; /* Utilisez une hauteur minimale de 100% pour que le contenu prenne au moins toute la hauteur de la fenêtre */
+}
+
+
+button {
+  border-radius: 10px;
+  width: 40%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Pour s'assurer que l'image est entièrement couverte par le conteneur */
+}

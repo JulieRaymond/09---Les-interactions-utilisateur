@@ -1,0 +1,51 @@
+.create-kittens {
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 2rem;
+}
+.valid-button {
+  background-color: #15616d;
+  color: white;
+}
+
+.valid-button:hover {
+  background-color: #001524;
+  color: white;
+}
+
+.invalid-button {
+  background-color: #ff7d00;
+  color: white;
+}
+.invalid-button:hover {
+  background-color: #78290f;
+  color: white;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}

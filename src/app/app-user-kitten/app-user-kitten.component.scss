@@ -1,0 +1,26 @@
+.sidebar {
+  width: 5rem;
+  background-color: #ffecd1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.sidebar p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar .kitten-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar .kitten-list li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  margin-left: 250px; /* Marge à gauche pour laisser de la place à la sidebar */
+  padding: 20px; /* Espacement interne pour le contenu principal */
+}

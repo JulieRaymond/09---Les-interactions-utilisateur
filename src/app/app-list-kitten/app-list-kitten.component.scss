@@ -1,0 +1,35 @@
+.kitten-card {
+  display: inline-block;
+  width: 200px;
+  margin: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Pour s'assurer que le contenu ne dépasse pas la carte */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kitten-card img {
+  width: 100%;
+  height: 120px; /* Ajustez la hauteur de l'image selon vos préférences */
+  object-fit: cover;
+  border-bottom: 1px solid #ccc; /* Ajoute une ligne de séparation sous l'image */
+}
+
+.kitten-card p {
+  padding: 8px;
+  margin: 0;
+}
+
+.kitten-card button {
+  width: 100%;
+  background-color: #15616d;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.kitten-card button:hover {
+  background-color: #001524;
+}

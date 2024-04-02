@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 5rem;
+  background-color: #ffecd1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.create-kittens,
+.available-kittens {
+  margin-bottom: 20px;
+}
